@@ -1,4 +1,6 @@
-# Delivery QA Staging - NeoSer
+# Delivery QA Staging - NeoSer (resumen ejecutivo)
+
+> **Canónico:** `../../../docs/05-entrega-y-qa/delivery-qa-staging.md` (versión detallada con checklist completo de Vercel, env vars, rollback, smoke tests). Este archivo es el resumen ejecutivo del estado de la app Next.js.
 
 Estado ejecutivo de entrega en staging.
 
