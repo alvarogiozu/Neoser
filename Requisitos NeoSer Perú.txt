@@ -1,0 +1,45 @@
+Página Web
+.Inicio
+	-> Cursos
+	-> Servicios
+	-> Próximos eventos (seminarios que forman parte de un curso)
+	-> Lo que dicen de nosotros (sacar comentarios de facebook)
+.¿Quiénes somos?
+	-> Sobre NeoSer
+	-> Docentes (Foto, Nombre y cargo)
+	-> Equipo (Foto, Nombre y cargo)
+.Servicios
+	Por cada servicio que ingrese:
+	-> Ver contenido
+	-> Botón para comunicarse con un asesor (WhatsApp)
+.Cursos
+	Por cada curso que ingrese
+	-> ver contenido (objetivos, duración, temario, etc.)
+	-> Descargar brochure
+	-> testimonio de estudiantes
+.Blog
+	-> Ver listado de noticias de NeoSer y su contenido
+.Aula virtual
+	-> Enlace que redirige al aula
+.Carrito de compras
+	-> Tarjeta
+	-> QR (yape o plin)
+	-> WhatsApp (Asesor)
+	-> Generar enlace para pago con TC (curso o servicio)
+
+Estudiante debe registrar sus datos personales y profesionales
+(Datos que se van a guardar por pedir a Neoser)
+luego pagar el curso, similar a una compra de un boleto de viaje
+luego se enviará un correo indicándole que su compra fue exitosa
+luego se enviará su boleta de pago a su correo
+
+Aula Virtual
+	-> Equipo técnico agregará los cursos
+	-> Estudiante puede ver cartelera de próximos cursos
+	-> Estudiante puede ver todos los cursos pero solo tendrá acceso al curso que pagó
+	-> Estudiante podrá comentar la clase o video como un foro
+	-> los mensajes serán públicos: docente y estudiantes pueden comentar el foro
+	-> Estudiante no puede ver la clase n+1 si no vio la clase n para obtener su certificado
+	-> Esudiate puedes descargar contenido de clases (documentos)
+	
+Referencia: https://saludmentalperinatal.es/

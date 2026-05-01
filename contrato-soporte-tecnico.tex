@@ -1,0 +1,344 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm, top=2cm, bottom=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{lastpage}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Colores corporativos NeoSer ──────────────────────────────
+\definecolor{navy}{HTML}{1B3A6B}
+\definecolor{navydark}{HTML}{0F2548}
+\definecolor{pink}{HTML}{E8879B}
+\definecolor{pinkdark}{HTML}{D4637A}
+\definecolor{cream}{HTML}{FFF9F5}
+\definecolor{graytext}{HTML}{555555}
+\definecolor{lightgray}{HTML}{E0E0E0}
+
+% ── Fuentes ───────────────────────────────────────────────────
+\newcommand{\headingfont}{\sffamily\bfseries}
+
+% ── Configuracion de hyperref ─────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  urlcolor=pink,
+  pdfauthor={NeoSer},
+  pdftitle={Contrato de Soporte Tecnico y Mantenimiento},
+}
+
+% ── Estilo de secciones ──────────────────────────────────────
+\titleformat{\section}
+  {\sffamily\large\color{navy}\bfseries}
+  {CLAUSULA \thesection{} ---}
+  {0.5em}
+  {\MakeUppercase}
+\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{navydark}}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+% ── Encabezado y pie de pagina ────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{%
+  \small\color{graytext}%
+  Contrato de Soporte Tecnico y Mantenimiento --- NeoSer \quad|\quad
+  Pagina \thepage\ de \pageref{LastPage}%
+}
+
+% ── Linea decorativa ─────────────────────────────────────────
+\newcommand{\accentline}{%
+  \noindent\begin{tikzpicture}
+    \draw[pink, line width=2pt] (0,0) -- (\textwidth,0);
+  \end{tikzpicture}\par\vspace{0.3em}%
+}
+
+\newcommand{\thinline}{%
+  \noindent\begin{tikzpicture}
+    \draw[lightgray, line width=0.5pt] (0,0) -- (\textwidth,0);
+  \end{tikzpicture}\par\vspace{0.3em}%
+}
+
+% ── Comando para datos clave ─────────────────────────────────
+\newcommand{\datocontrato}[2]{%
+  \textbf{\color{navy}#1:} #2%
+}
+
+% ══════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── PORTADA / ENCABEZADO ─────────────────────────────────────
+\thispagestyle{empty}
+
+\begin{center}
+  % Logo placeholder - barra decorativa superior
+  \begin{tikzpicture}
+    \fill[navy] (0,0) rectangle (\textwidth, 0.4);
+    \fill[pink] (0,-0.15) rectangle (4,0.05);
+  \end{tikzpicture}
+
+  \vspace{1.5em}
+
+  {\sffamily\bfseries\LARGE\color{navy} CONTRATO DE SERVICIOS\\[0.3em]
+  DE SOPORTE TECNICO\\[0.3em]
+  Y MANTENIMIENTO WEB}
+
+  \vspace{0.8em}
+  \accentline
+  \vspace{0.3em}
+
+  {\large\color{graytext} NeoSer --- Maternidad y Medicina Humanizada}
+
+  \vspace{0.5em}
+  {\normalsize\color{graytext} Chiclayo, Peru}
+
+  \vspace{2em}
+
+  % ── Tabla de datos del contrato ──
+  \begin{tikzpicture}
+    \node[
+      fill=cream,
+      rounded corners=8pt,
+      inner sep=15pt,
+      text width=0.85\textwidth,
+      align=left
+    ] {
+      \begin{tabularx}{0.85\textwidth}{@{}lX@{}}
+        \textbf{\color{navy}Documento:}     & Contrato de Soporte Tecnico y Mantenimiento \\[0.4em]
+        \textbf{\color{navy}Fecha:}         & 20 de abril de 2026 \\[0.4em]
+        \textbf{\color{navy}Vigencia:}      & 12 meses a partir de la firma \\[0.4em]
+        \textbf{\color{navy}Referencia:}    & CONT-NEOSER-2026-001 \\
+      \end{tabularx}
+    };
+  \end{tikzpicture}
+\end{center}
+
+\vspace{2em}
+
+% ══════════════════════════════════════════════════════════════
+% CUERPO DEL CONTRATO
+% ══════════════════════════════════════════════════════════════
+
+\section{Partes Contratantes}
+
+Conste por el presente documento, el contrato de prestacion de servicios de soporte tecnico y mantenimiento que celebran:
+
+\vspace{0.5em}
+
+\noindent\begin{tikzpicture}
+\node[fill=cream, rounded corners=6pt, inner sep=12pt, text width=\textwidth-24pt] {
+\textbf{\color{navy}EL PRESTADOR DEL SERVICIO:}\\[0.3em]
+\datocontrato{Nombre}{Alvaro Giovanni Zu\~niga Canazas}\\
+\datocontrato{DNI}{76545098}\\
+\datocontrato{Actividad}{Desarrollador Web / Soporte Tecnico}\\
+\datocontrato{Correo}{alvaro.gio.zu@gmail.com}\\
+\datocontrato{Telefono}{+51 974 177 057}\\[0.5em]
+En adelante denominado \textbf{``EL PRESTADOR''}.
+};
+\end{tikzpicture}
+
+\vspace{0.8em}
+
+\noindent\begin{tikzpicture}
+\node[fill=cream, rounded corners=6pt, inner sep=12pt, text width=\textwidth-24pt] {
+\textbf{\color{navy}LA CONTRATANTE:}\\[0.3em]
+\datocontrato{Nombre}{Diana Silva}\\
+\datocontrato{Empresa}{NeoSer --- Maternidad y Medicina Humanizada}\\
+\datocontrato{Contacto}{+51 978 822 368}\\
+\datocontrato{Ubicacion}{Chiclayo, Peru}\\[0.5em]
+En adelante denominada \textbf{``LA CONTRATANTE''}.
+};
+\end{tikzpicture}
+
+\vspace{0.5em}
+
+Ambas partes, en adelante denominadas conjuntamente \textbf{``LAS PARTES''}, acuerdan celebrar el presente contrato bajo los siguientes terminos y condiciones:
+
+% ──────────────────────────────────────────────────────────────
+\section{Antecedentes}
+
+EL PRESTADOR desarrollo para LA CONTRATANTE el sitio web institucional de \textbf{NeoSer --- Maternidad y Medicina Humanizada}, proyecto que comprende una landing page empresarial con sistema de captacion de leads, integracion con WhatsApp, CRM (HubSpot) y base de datos (Supabase), segun lo acordado previamente entre las partes.
+
+Dado que EL PRESTADOR ya no forma parte del equipo operativo de NeoSer, ambas partes reconocen la necesidad de formalizar un acuerdo que garantice la continuidad del soporte tecnico, mantenimiento y disponibilidad para consultas sobre la plataforma desarrollada.
+
+% ──────────────────────────────────────────────────────────────
+\section{Objeto del Contrato}
+
+El presente contrato tiene por objeto establecer los terminos y condiciones bajo los cuales EL PRESTADOR brindara los siguientes servicios a LA CONTRATANTE:
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item \textbf{Soporte Tecnico Garantizado} por un periodo minimo de \textbf{seis (6) meses}, contados a partir de la fecha de firma del presente contrato.
+  \item \textbf{Apoyo y Asesoria Tecnica} durante los \textbf{doce (12) meses} de vigencia del contrato, incluyendo consultas, orientacion y recomendaciones sobre el uso y gestion de la plataforma.
+  \item \textbf{Mantenimiento Correctivo} para resolucion de errores, fallos o incidencias tecnicas que afecten el funcionamiento normal del sitio web.
+  \item \textbf{Actualizaciones Menores} de seguridad y compatibilidad que sean necesarias para mantener la operatividad de la plataforma.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Alcance de los Servicios}
+
+\subsection{Servicios Incluidos}
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=2em, itemsep=0.3em]
+  \item Correccion de errores (bugs) en el codigo existente del sitio web.
+  \item Resolucion de problemas de integracion con servicios de terceros (WhatsApp 360dialog, HubSpot, Supabase, Vercel).
+  \item Soporte para la configuracion y gestion del panel de administracion.
+  \item Asesoria tecnica sobre el uso de las funcionalidades implementadas.
+  \item Actualizaciones de seguridad criticas de las dependencias del proyecto.
+  \item Monitoreo basico de disponibilidad y rendimiento del sitio.
+  \item Respaldo y orientacion para la recuperacion ante incidentes.
+\end{enumerate}
+
+\subsection{Servicios No Incluidos}
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=2em, itemsep=0.3em]
+  \item Desarrollo de nuevas funcionalidades o modulos no contemplados en el proyecto original (Fase 1).
+  \item Desarrollo de la Fase 2 (Aula Virtual), que sera objeto de un acuerdo independiente.
+  \item Rediseno grafico o cambios sustanciales en la identidad visual.
+  \item Generacion de contenido (textos, imagenes, videos).
+  \item Gestion de campanas publicitarias o marketing digital.
+  \item Soporte a hardware, redes o infraestructura fisica de LA CONTRATANTE.
+\end{enumerate}
+
+\textit{\color{graytext}Nota: Los servicios no incluidos podran ser contratados de manera adicional, previa cotizacion y acuerdo entre LAS PARTES.}
+
+% ──────────────────────────────────────────────────────────────
+\section{Plazos y Tiempos de Respuesta}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item \textbf{Plazo maximo de desarrollo/implementacion de cualquier correccion o ajuste:} \textbf{dos (2) semanas} calendario desde la notificacion formal del requerimiento.
+  \item \textbf{Tiempo de respuesta inicial:} Maximo \textbf{48 horas habiles} para acusar recibo y diagnostico preliminar de cualquier incidencia reportada.
+  \item \textbf{Incidencias criticas} (sitio web caido, fallo de seguridad): Atencion prioritaria con respuesta en un maximo de \textbf{24 horas habiles}.
+  \item \textbf{Consultas generales y asesoria:} Respuesta en un plazo maximo de \textbf{72 horas habiles}.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Vigencia y Duracion}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item El presente contrato tendra una vigencia de \textbf{doce (12) meses} contados a partir de la fecha de firma.
+  \item El \textbf{soporte tecnico garantizado} (correccion de errores, mantenimiento correctivo) estara vigente por un periodo \textbf{minimo de seis (6) meses}.
+  \item El \textbf{apoyo y asesoria tecnica} (consultas, orientacion, recomendaciones) se extendera durante los \textbf{doce (12) meses} completos de vigencia.
+  \item Al termino del contrato, LAS PARTES podran acordar una renovacion bajo nuevos terminos y condiciones.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Canal de Comunicacion}
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=2em, itemsep=0.3em]
+  \item Las solicitudes de soporte deberan ser comunicadas a traves de los canales acordados por LAS PARTES (WhatsApp, correo electronico u otro medio digital convenido).
+  \item Las solicitudes realizadas fuera del horario laboral seran atendidas al siguiente dia habil.
+  \item EL PRESTADOR se compromete a mantener al menos un canal de comunicacion activo y accesible durante toda la vigencia del contrato.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Contraprestacion Economica}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item El soporte tecnico descrito en las Clausulas 3 y 4 se encuentra \textbf{incluido} como parte del proyecto de desarrollo web originalmente contratado, sin costo adicional para LA CONTRATANTE durante los primeros \textbf{seis (6) meses}.
+  \item A partir del septimo (7mo) mes y hasta el mes doce (12), el apoyo y asesoria tecnica continuara de manera \textbf{gratuita}, limitado a consultas y orientacion general.
+  \item Cualquier servicio adicional que exceda el alcance definido en la Clausula 4 sera presupuestado de manera independiente, previa aprobacion de LA CONTRATANTE.
+  \item Los trabajos adicionales se cotizaran por hora o por proyecto, segun la naturaleza del requerimiento, y seran formalizados mediante una cotizacion escrita antes de su ejecucion.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Propiedad Intelectual y Entregables}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item El codigo fuente, disenos y configuraciones desarrollados para el proyecto NeoSer son propiedad de LA CONTRATANTE.
+  \item EL PRESTADOR entregara, al finalizar el proyecto o cuando LA CONTRATANTE lo solicite, la totalidad del codigo fuente, credenciales de acceso a servicios y documentacion tecnica necesaria para la operacion autonoma de la plataforma.
+  \item EL PRESTADOR se compromete a facilitar la transicion a otro proveedor tecnico si LA CONTRATANTE asi lo requiriera, proporcionando la documentacion y asistencia razonable para dicho traspaso.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Confidencialidad}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item Ambas partes se comprometen a mantener estricta confidencialidad sobre toda informacion tecnica, comercial, financiera y de pacientes a la que tengan acceso con motivo del presente contrato.
+  \item Esta obligacion de confidencialidad permanecera vigente incluso despues de la terminacion del contrato, por un periodo adicional de \textbf{dos (2) anos}.
+  \item EL PRESTADOR se compromete a no divulgar datos personales de pacientes o usuarios de la plataforma, en cumplimiento con la normativa de proteccion de datos personales vigente en Peru (Ley N.° 29733).
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Terminacion Anticipada}
+
+El presente contrato podra ser resuelto anticipadamente en los siguientes casos:
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=2em, itemsep=0.3em]
+  \item Por mutuo acuerdo de LAS PARTES, manifestado por escrito.
+  \item Por incumplimiento grave de cualquiera de las partes, previa notificacion escrita con un plazo de \textbf{quince (15) dias} calendario para subsanar el incumplimiento.
+  \item Por causa de fuerza mayor o caso fortuito que imposibilite la prestacion de los servicios por un periodo superior a \textbf{treinta (30) dias} consecutivos.
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────
+\section{Disposiciones Finales}
+
+\begin{enumerate}[label=\textbf{\color{pink}\arabic*.}, leftmargin=2em, itemsep=0.4em]
+  \item Todo aspecto no previsto en el presente contrato sera resuelto de comun acuerdo entre LAS PARTES, primando la buena fe y el principio de colaboracion.
+  \item Para cualquier controversia derivada del presente contrato, LAS PARTES acuerdan someterse a la jurisdiccion de los tribunales competentes de la ciudad de Chiclayo, departamento de Lambayeque, Peru.
+  \item El presente contrato se firma en dos (2) ejemplares de igual tenor y valor, uno para cada parte.
+\end{enumerate}
+
+% ══════════════════════════════════════════════════════════════
+% FIRMAS
+% ══════════════════════════════════════════════════════════════
+
+\vspace{3em}
+\accentline
+\vspace{1em}
+
+\noindent En senal de conformidad, LAS PARTES suscriben el presente contrato en la ciudad de Chiclayo, a los 20 dias del mes de abril de 2026.
+
+\vspace{4em}
+
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+  \centering
+  \rule{6cm}{0.5pt}\\[0.5em]
+  \textbf{\color{navy}Alvaro Giovanni Zu\~niga Canazas}\\
+  {\small\color{graytext}EL PRESTADOR}\\
+  {\small\color{graytext}Desarrollador Web / Soporte Tecnico}\\[0.5em]
+  {\footnotesize DNI: 76545098}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+  \centering
+  \rule{6cm}{0.5pt}\\[0.5em]
+  \textbf{\color{navy}Diana Silva}\\
+  {\small\color{graytext}LA CONTRATANTE}\\
+  {\small\color{graytext}NeoSer --- Maternidad y Medicina Humanizada}\\[0.5em]
+  {\footnotesize DNI: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\end{minipage}
+
+\vspace{3em}
+
+% ── Pie decorativo ────────────────────────────────────────────
+\begin{center}
+  \begin{tikzpicture}
+    \fill[pink] (0,0) rectangle (4,0.15);
+    \fill[navy] (0,-0.05) rectangle (\textwidth, -0.35);
+  \end{tikzpicture}
+
+  \vspace{0.8em}
+  {\small\color{graytext} NeoSer --- Maternidad y Medicina Humanizada | Chiclayo, Peru}\\
+  {\small\color{graytext} +51 978 822 368 | contacto@neoser.pe}
+\end{center}
+
+\end{document}

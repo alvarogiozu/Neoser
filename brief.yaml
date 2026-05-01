@@ -1,0 +1,43 @@
+meta:
+  cliente: "NeoSer"
+  proyecto: "Sitio web institucional - Maternidad y Medicina Humanizada"
+  fecha: 2026-03-26
+  estado: activo
+  origen: "referido"
+
+cliente:
+  nombre: "Diana Silva"
+  empresa: "NeoSer - Maternidad y Medicina Humanizada"
+  contacto: "+51978822368"
+
+proyecto:
+  tipo: "Landing Empresarial"
+  descripcion: "Sitio web profesional para centro de maternidad y medicina humanizada en Chiclayo"
+  fases:
+    - nombre: "Fase 1 - Sitio Publico"
+      descripcion: "Single-page con secciones: Inicio, Servicios, Cursos, Nosotros, Noticias, Contacto"
+      estado: "en_progreso"
+    - nombre: "Fase 2 - Aula Virtual"
+      descripcion: "Plataforma e-learning con registro, pagos, foro y certificados"
+      estado: "pendiente"
+
+inversion:
+  moneda: "PEN"
+  precio: 5200
+  pagos:
+    - concepto: "Adelanto 50%"
+      monto: 2600
+      estado: "pagado"
+      fecha: 2026-03-26
+    - concepto: "Entrega final 50%"
+      monto: 2600
+      estado: "pendiente"
+
+desarrollo:
+  desarrollador: "Álvaro"
+
+contexto:
+  tipo_cliente: "salud_maternidad"
+  nivel_tecnico: "bajo"
+  ubicacion: "Chiclayo, Peru"
+  referencia: "saludmentalperinatal.es"
