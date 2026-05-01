@@ -59,7 +59,7 @@ export function BookingPreform() {
       <input
         name="phone"
         required
-        placeholder="WhatsApp"
+        placeholder="Telefono"
         className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm"
       />
       <input

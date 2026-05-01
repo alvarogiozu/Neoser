@@ -82,16 +82,6 @@ Write-Host "--- API: enrollments ---"
 Check-Status "POST sin auth" "401" "POST" "$BaseUrl/api/enrollments" '{"courseId":"00000000-0000-0000-0000-000000000000"}'
 
 Write-Host ""
-Write-Host "--- API: whatsapp ---"
-Check-Status "POST sin auth" "401" "POST" "$BaseUrl/api/whatsapp" '{"to":"51978822368","template":"neoser_bienvenida"}'
-Check-Status "Webhook token incorrecto" "403" "GET" "$BaseUrl/api/whatsapp/webhook?hub.mode=subscribe&hub.verify_token=wrong&hub.challenge=test"
-
-Write-Host ""
-Write-Host "--- API: whatsapp webhook ---"
-Check-Status "Webhook opt-out SALIR" "200" "POST" "$BaseUrl/api/whatsapp/webhook" '{"entry":[{"changes":[{"value":{"messages":[{"from":"51900000001","text":{"body":"SALIR"}}]}}]}]}'
-Check-Status "Webhook mensaje generico" "200" "POST" "$BaseUrl/api/whatsapp/webhook" '{"entry":[{"changes":[{"value":{"messages":[{"from":"51900000002","text":{"body":"Hola quiero info"}}]}}]}]}'
-
-Write-Host ""
 Write-Host "=== Resultado: $pass passed, $fail failed ==="
 
 if ($fail -gt 0) {

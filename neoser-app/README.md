@@ -28,9 +28,6 @@ Copiar `.env.example` a `.env.local` y completar:
 - `EMAIL_PROVIDER` (`hubspot` o `brevo`)
 - `EMAIL_API_KEY`
 - `EMAIL_FROM`
-- `WHATSAPP_PROVIDER` (`360dialog` o `whato`)
-- `WHATSAPP_API_KEY` (360dialog)
-- `WHATSAPP_WEBHOOK_SECRET`
 
 ## Base de datos
 Ejecutar el esquema en Supabase SQL editor:
@@ -42,8 +39,6 @@ Ejecutar el esquema en Supabase SQL editor:
 - `GET/POST /api/bookings`
 - `POST /api/bookings/cal-webhook`
 - `POST /api/enrollments` (requiere sesion)
-- `POST /api/whatsapp`
-- `GET/POST /api/whatsapp/webhook`
 
 ## Documentacion operativa
 
@@ -56,4 +51,3 @@ Canónica del proyecto (raíz del repo):
 - Delivery completo: `../docs/05-entrega-y-qa/delivery-qa-staging.md`
 - Coordinación backend (TERMINAL-C): `../docs/05-entrega-y-qa/TERMINAL-C-BACKEND.md`
 - Playbooks RevOps: `../docs/03-playbooks-revops/`
-- Playbooks WhatsApp: `../docs/04-playbooks-whatsapp/`

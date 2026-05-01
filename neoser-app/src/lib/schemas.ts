@@ -4,7 +4,6 @@ export const leadSourceSchema = z.enum([
   "meta_ads",
   "google_ads",
   "instagram_organico",
-  "whatsapp_directo",
   "referida",
   "web",
   "otro",

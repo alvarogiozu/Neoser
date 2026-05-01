@@ -6,21 +6,16 @@ export default function CheckoutFailurePage() {
       <p className="section-tag">Pago no completado</p>
       <h1 className="section-title">No se pudo procesar el pago</h1>
       <p className="mt-4 text-gray-600">
-        Revisa tus datos o intenta con otro método. Si el problema continúa, escríbenos por
-        WhatsApp.
+        Revisa tus datos o intenta con otro metodo. Si el problema continua, escribenos por el
+        formulario de contacto.
       </p>
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <Link href="/checkout" className="btn-primary">
           Reintentar pago
         </Link>
-        <a
-          href="https://wa.me/51932713071?text=Hola%2C%20necesito%20ayuda%20con%20mi%20pago%20en%20NeoSer"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-full border border-[var(--navy)] px-6 py-3 text-[var(--navy)]"
-        >
-          Soporte por WhatsApp
-        </a>
+        <Link href="/#contacto" className="rounded-full border border-[var(--navy)] px-6 py-3 text-[var(--navy)]">
+          Ir a contacto
+        </Link>
       </div>
     </main>
   );

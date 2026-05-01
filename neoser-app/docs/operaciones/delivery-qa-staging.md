@@ -16,7 +16,7 @@ Estado ejecutivo de entrega en staging.
 ## QA mínimo requerido antes de go-live
 - Home, contacto, login, admin redirect.
 - APIs: `contact-leads`, `courses`, `enrollments`, `bookings`, `email/automation`.
-- Webhooks: `/api/bookings/cal-webhook`, `/api/whatsapp/webhook`.
+- Webhooks: `/api/bookings/cal-webhook`.
 - Google Maps con y sin key.
 
 ## Scripts de smoke test
@@ -33,10 +33,6 @@ Estado ejecutivo de entrega en staging.
    - `CAL_WEBHOOK_SIGNING_KEY`
    - `EMAIL_PROVIDER`
    - `EMAIL_FROM`
-   - `WHATSAPP_API_KEY`
-   - `WHATSAPP_PROVIDER`
-   - `WHATSAPP_WHATO_ENDPOINT` (si provider = whato)
-   - `WHATSAPP_WEBHOOK_SECRET`
    - `HUBSPOT_ACCESS_TOKEN` (opcional)
 3. Resolver `401` de preview para QA externo.
 
@@ -44,4 +40,3 @@ Estado ejecutivo de entrega en staging.
 - Reserva: pre-registro en `/api/bookings` + confirmacion por webhook Cal.
 - CRM: sync lead y reserva hacia HubSpot no bloqueante.
 - Email automation: prueba de `POST /api/email/automation` y auditoria en `email_events`.
-- WhatsApp adapter: validar envio con `WHATSAPP_PROVIDER=360dialog` y fallback de variables.

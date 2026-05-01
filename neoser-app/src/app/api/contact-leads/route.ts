@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { contactLeadSchema } from "@/lib/schemas";
 import { syncLeadToHubspot } from "@/lib/hubspot";
-import { sendWelcomeIfConsented } from "@/lib/whatsapp";
 
 export async function GET(request: NextRequest) {
   try {
@@ -98,13 +97,6 @@ export async function POST(request: Request) {
     } catch (syncError) {
       console.error("HubSpot sync failed:", syncError);
     }
-
-    // WhatsApp welcome: only if user gave consent (anti-ban compliance).
-    sendWelcomeIfConsented(
-      parsed.data.phone,
-      parsed.data.fullName,
-      parsed.data.waConsent,
-    );
 
     return NextResponse.json({ ok: true, leadId: lead.id }, { status: 201 });
   } catch {

@@ -19,9 +19,9 @@ Sitio web institucional + capa operativa digital para el centro de maternidad y 
 | Carpeta | Para qué sirve | Cuándo entrar |
 |---|---|---|
 | `website/` | Landing estática heredada (HTML/CSS/JS plano) | Cambios menores de copy mientras se migra a `neoser-app/` |
-| `neoser-app/` | App Next.js: APIs, auth, integraciones (Supabase, Cal.com, HubSpot, WhatsApp 360dialog) | **Trabajo principal de desarrollo V1** |
+| `neoser-app/` | App Next.js: APIs, auth, integraciones (Supabase, Cal.com, HubSpot) | **Trabajo principal de desarrollo V1** |
 | `branding/` | Manual de marca + assets para web/RRSS | Cuando necesites un logo, fuente o color |
-| `docs/` | Contexto, contratos, playbooks RevOps/WhatsApp, entregables, coordinación | Antes de codear cualquier feature |
+| `docs/` | Contexto, contratos, playbooks RevOps, entregables, coordinación | Antes de codear cualquier feature |
 
 ---
 
@@ -39,7 +39,6 @@ Lectura adicional según tu rol:
 
 - **Backend / integraciones** → `docs/05-entrega-y-qa/TERMINAL-C-BACKEND.md` + `neoser-app/docs/backend/`
 - **RevOps / CRM / Email** → `docs/03-playbooks-revops/`
-- **WhatsApp / 360dialog** → `docs/04-playbooks-whatsapp/`
 - **UI / Frontend** → `docs/00-contexto/04-ui-handoff-hermano.md`
 - **Multi-agente (varios Claudes/Cursor en paralelo)** → `docs/06-coordinacion-equipo/`
 

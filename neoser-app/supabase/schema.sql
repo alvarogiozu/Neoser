@@ -254,7 +254,7 @@ with check (
   )
 );
 
--- WhatsApp opt-out list (anti-ban compliance)
+-- Opt-out de mensajeria (compliance)
 create table if not exists public.wa_opt_outs (
   phone text primary key,
   opted_out_at timestamptz not null default now()

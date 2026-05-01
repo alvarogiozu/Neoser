@@ -7,7 +7,6 @@ const sourceOptions = [
   { value: "meta_ads", label: "Meta Ads" },
   { value: "google_ads", label: "Google Ads" },
   { value: "instagram_organico", label: "Instagram organico" },
-  { value: "whatsapp_directo", label: "WhatsApp directo" },
   { value: "referida", label: "Referida" },
   { value: "otro", label: "Otro" },
 ] as const;
@@ -69,7 +68,7 @@ export function ContactLeadForm() {
       <input
         name="phone"
         required
-        placeholder="WhatsApp"
+        placeholder="Telefono"
         className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm"
       />
       <input
@@ -117,7 +116,7 @@ export function ContactLeadForm() {
       />
       <label className="flex items-start gap-2 text-xs text-gray-600">
         <input name="waConsent" type="checkbox" required className="mt-0.5" />
-        <span>Acepto recibir mensajes por WhatsApp relacionados a mi consulta.</span>
+        <span>Acepto recibir mensajes relacionados a mi consulta.</span>
       </label>
 
       <button disabled={status === "loading"} className="btn-primary disabled:opacity-60">

@@ -24,13 +24,12 @@ Este archivo lo leen automáticamente Cursor, Codex y otras IAs que sigan la con
 | Editar landing estática | `website/` |
 | Ajustar contratos, scope o decisiones de producto | `docs/00-contexto/` |
 | Revisar el contrato vigente con la clienta | `docs/01-contratos/vigente-soporte-tecnico-2026.pdf` |
-| Tocar plantillas WhatsApp | `docs/04-playbooks-whatsapp/` |
 | Tocar email/CRM/automatizaciones | `docs/03-playbooks-revops/` |
 | Subir cambios a staging | `docs/05-entrega-y-qa/delivery-qa-staging.md` |
 | Coordinar con otra sesión de IA | `docs/06-coordinacion-equipo/sync-claudes-neoser.md` |
 
 ## Commits y PRs
 
-- Mensajes en español, imperativo, prefijo por área (`feat(reservas):`, `fix(whatsapp):`, `docs(contratos):`, `chore(repo):`).
+- Mensajes en español, imperativo, prefijo por área (`feat(reservas):`, `fix(crm):`, `docs(contratos):`, `chore(repo):`).
 - PRs siguen `.github/pull_request_template.md`.
 - No subir `.env*` ni archivos con credenciales.

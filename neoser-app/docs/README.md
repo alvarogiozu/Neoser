@@ -2,7 +2,7 @@
 
 Esta carpeta contiene **solo docs específicas del app Next.js**: cómo se opera, cómo se sube a staging, cómo se modela algún dato del backend.
 
-Todo lo transversal del proyecto (scope, contratos, playbooks RevOps/WhatsApp, delivery global, coordinación) vive en `../../docs/` (en la raíz del repo).
+Todo lo transversal del proyecto (scope, contratos, playbooks RevOps, delivery global, coordinación) vive en `../../docs/` (en la raíz del repo).
 
 ## Estructura
 
@@ -17,4 +17,4 @@ Todo lo transversal del proyecto (scope, contratos, playbooks RevOps/WhatsApp, d
 |---|---|---|
 | Delivery / QA / Staging completo | `../../docs/05-entrega-y-qa/delivery-qa-staging.md` | Es transversal: aplica al sitio entero, no solo al app |
 | Coordinación backend (TERMINAL-C) | `../../docs/05-entrega-y-qa/TERMINAL-C-BACKEND.md` | Coordinación cross-terminal, no operativa local |
-| Playbooks RevOps / WhatsApp | `../../docs/03-playbooks-revops/`, `../../docs/04-playbooks-whatsapp/` | Mismas plantillas y políticas para todo el proyecto |
+| Playbooks RevOps | `../../docs/03-playbooks-revops/` | Flujos y políticas para CRM, seguimiento y email |

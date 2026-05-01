@@ -68,19 +68,6 @@ check "POST sin auth" "401" POST "$BASE/api/enrollments" \
   '{"courseId":"00000000-0000-0000-0000-000000000000"}'
 
 echo ""
-echo "--- API: whatsapp ---"
-check "POST sin auth" "401" POST "$BASE/api/whatsapp" \
-  '{"to":"51978822368","template":"neoser_bienvenida"}'
-check "Webhook token incorrecto" "403" GET "$BASE/api/whatsapp/webhook?hub.mode=subscribe&hub.verify_token=wrong&hub.challenge=test"
-
-echo ""
-echo "--- API: whatsapp webhook (Terminal B) ---"
-check "Webhook opt-out SALIR" "200" POST "$BASE/api/whatsapp/webhook" \
-  '{"entry":[{"changes":[{"value":{"messages":[{"from":"51900000001","text":{"body":"SALIR"}}]}}]}]}'
-check "Webhook mensaje generico" "200" POST "$BASE/api/whatsapp/webhook" \
-  '{"entry":[{"changes":[{"value":{"messages":[{"from":"51900000002","text":{"body":"Hola quiero info"}}]}}]}]}'
-
-echo ""
 echo "=== Resultado: $PASS passed, $FAIL failed, $SKIP skipped ==="
 
 if [[ $FAIL -gt 0 ]]; then
