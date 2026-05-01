@@ -73,5 +73,5 @@ NeoSer es un **sitio web institucional + capa inicial de operacion digital** par
 
 - Diana tiene nivel técnico bajo y opera sola → **simplicidad sobre features**
 - Ads ya corriendo (Meta + Google) → los formularios no pueden romperse
-- Scope operativo congelado en `docs/context/01-scope-freeze-v1.md` → cambios fuera de alcance solo por Change Request
+- Scope operativo congelado en `docs/00-contexto/01-scope-freeze-v1.md` → cambios fuera de alcance solo por Change Request
 - Idioma: español (Perú) | Zona horaria: America/Lima (UTC-5)

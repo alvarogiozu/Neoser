@@ -1,5 +1,7 @@
 # SYNC-CLAUDES-NEOSER
 
+> **Nota de reorganización (2026-05-01):** este archivo se movió de la raíz a `docs/06-coordinacion-equipo/sync-claudes-neoser.md`. Las rutas de "documentos vivos por terminal" y los logs históricos abajo siguen mencionando paths antiguos como `neoser-app/docs/revops/`, `docs/whatsapp/`, etc. **Las rutas actuales están en la sección "2) Asignación por terminal" actualizada.** Los logs históricos se preservan tal cual por trazabilidad.
+
 Documento maestro de coordinación viva para trabajo paralelo (Cursor + múltiples Claudes).
 
 ## Objetivo
@@ -39,11 +41,11 @@ Antes de terminar su bloque, **debe actualizar este archivo** con sus cambios re
 ## 2) Asignación por terminal (no cruzar scopes)
 
 ## Documentos vivos por terminal (obligatorio)
-- General (coordinación): `SYNC-CLAUDES-NEOSER.md`
-- Terminal A (RevOps/CRM): `neoser-app/docs/revops/TERMINAL-A-REVOPS.md`
-- Terminal B (WhatsApp): `neoser-app/docs/whatsapp/TERMINAL-B-WHATSAPP.md`
-- Terminal C (Backend): `neoser-app/docs/backend/TERMINAL-C-BACKEND.md`
-- Terminal D (Delivery/QA): `neoser-app/docs/delivery/TERMINAL-D-DELIVERY.md`
+- General (coordinación): `docs/06-coordinacion-equipo/sync-claudes-neoser.md` *(este archivo)*
+- Terminal A (RevOps/CRM): `docs/03-playbooks-revops/TERMINAL-A-REVOPS.md`
+- Terminal B (WhatsApp): `docs/04-playbooks-whatsapp/TERMINAL-B-WHATSAPP.md`
+- Terminal C (Backend): `docs/05-entrega-y-qa/TERMINAL-C-BACKEND.md`
+- Terminal D (Delivery/QA): `docs/05-entrega-y-qa/TERMINAL-D-DELIVERY.md`
 
 Regla:
 - Cada terminal actualiza su documento propio en cada iteración.
