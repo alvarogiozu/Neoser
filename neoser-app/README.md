@@ -46,5 +46,14 @@ Ejecutar el esquema en Supabase SQL editor:
 - `GET/POST /api/whatsapp/webhook`
 
 ## Documentacion operativa
-- Baseline de migracion: `docs/migration-baseline.md`
-- QA/Staging/Cutover: `docs/staging-cutover-checklist.md`
+
+Local del app:
+- Baseline de migracion: `docs/operaciones/migration-baseline.md`
+- QA/Staging/Cutover (resumen ejecutivo): `docs/operaciones/staging-cutover-checklist.md`
+- Delivery ejecutivo: `docs/operaciones/delivery-qa-staging.md`
+
+Canónica del proyecto (raíz del repo):
+- Delivery completo: `../docs/05-entrega-y-qa/delivery-qa-staging.md`
+- Coordinación backend (TERMINAL-C): `../docs/05-entrega-y-qa/TERMINAL-C-BACKEND.md`
+- Playbooks RevOps: `../docs/03-playbooks-revops/`
+- Playbooks WhatsApp: `../docs/04-playbooks-whatsapp/`
